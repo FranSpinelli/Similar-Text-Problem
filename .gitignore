@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribución
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Instancias del instalador
+*.egg
+*.whl
+
+# Instalaciones de pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Archivos de configuración de la distribución
+*.cfg
+
+# Directorios creados por pytest
+.cache/
+
+# Directorios creados por mypy
+.mypy_cache/
+
+# Directorios creados por coverage.py
+.coverage
+htmlcov/
+
+# Directorios creados por tox
+.tox/
+
+# Directorios creados por Sphinx cuando se construye la documentación
+docs/_build/
+
+# Archivos de entorno
+.env
+.venv
+env/
+venv/
+
+# Archivos de jupyter notebooks
+.ipynb_checkpoints
+
+# Editor de texto
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de log
+*.log
+
+# Archivos de caché de pytest
+.pytest_cache/
+
+# Otros
+*.sqlite3
+
