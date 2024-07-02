@@ -1,6 +1,6 @@
-from solution_methods import *
-from neighbor_methods import *
-from value_calculation import calculate_neighbor_differences
+from grasp_algorithm_related.solution_methods import *
+from grasp_algorithm_related.neighbor_methods import *
+from grasp_algorithm_related.value_calculation import calculate_neighbor_differences
 
 
 def _generate_neighborhood(solution_text, alphabet):

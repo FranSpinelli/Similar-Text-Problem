@@ -1,7 +1,7 @@
 import math
 import random
 from collections import Counter
-from value_calculation import calculate_solution_differences
+from grasp_algorithm_related.value_calculation import calculate_solution_differences
 
 
 def _calculate_candidates_list_size(alphabet):

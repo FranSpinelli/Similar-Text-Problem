@@ -1,4 +1,4 @@
-from solution_methods import get_solution_differences, get_solution_text
+from grasp_algorithm_related.solution_methods import get_solution_differences, get_solution_text
 
 
 def _get_difference_between(text1, text2):
