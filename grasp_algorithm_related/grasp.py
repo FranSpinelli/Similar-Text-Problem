@@ -64,7 +64,7 @@ def grasp(problem_instance_file_path):
 
     graphic_information = []
 
-    while iterations_without_improvement < 70 and iteration < 100:
+    while iteration < 1500:
         print("iteracion nro: ", iteration)
 
         # La solucion greedy-randomized solo se utilizará como punto de partida de la busqueda local, ya que esta
@@ -81,10 +81,12 @@ def grasp(problem_instance_file_path):
         else:
             iterations_without_improvement += 1
 
-        print("iteraciones sin mejora:", iterations_without_improvement)
-
         graphic_information.append((iteration, get_solution_value(best_solution)))
         iteration += 1
+
+        print("iteraciones sin mejora:", iterations_without_improvement)
+        print("mejor valor calculado hasta el momento: ", get_solution_value(best_solution))
+        print(graphic_information)
 
     _write_solution_file(_generate_file_name_from(problem_instance_file_path), best_solution)
 
