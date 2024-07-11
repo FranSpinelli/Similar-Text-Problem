@@ -48,6 +48,10 @@ def _determine_alphabet(text_list):
     return set("".join(text_list))
 
 
+def _get_iterations_needed(number_of_texts, texts_length):
+    return round(0.0758 * (number_of_texts * texts_length) + 271.7741)
+
+
 def grasp(problem_instance_file_path):
     # PARAM problem_instance_file_path: el path completo a donde está el archivo con la instancia del problema
     # con la que vamos a trabajar
@@ -61,10 +65,12 @@ def grasp(problem_instance_file_path):
     best_solution = None
     iteration = 0
     iterations_without_improvement = 0
+    iterations_needed = _get_iterations_needed(len(text_list), len(text_list[0]))
+    print("iteraciones necesarias según la funcion: ", iterations_needed)
 
     graphic_information = []
 
-    while iteration < 1500:
+    while iteration < iterations_needed:
         print("iteracion nro: ", iteration)
 
         # La solucion greedy-randomized solo se utilizará como punto de partida de la busqueda local, ya que esta

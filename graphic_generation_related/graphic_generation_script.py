@@ -34,7 +34,7 @@ def generate_graphic_from(graphic_input_data_file):
 
     plt.xlabel('Cantidad de Iteraciones')
     plt.ylabel('Mejor valor obtenido hasta el momento')
-    plt.title('Mejor valor obtenido por iteración en diferentes corridas del algoritmo, instancia 20_300')
+    plt.title('Mejor valor obtenido por iteración en diferentes corridas del algoritmo, instancia 20_700')
     plt.legend()
 
     plt.show()
